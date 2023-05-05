@@ -4,28 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".login_Activity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo"/>
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/baseline_people"
+        android:layout_marginHorizontal="30dp"
         android:hint="Username"
-        android:textColorHint="#fff">
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        app:startIconDrawable="@drawable/baseline_people"
+
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:background="@drawable/input" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Password"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        app:startIconDrawable="@drawable/baseline_lock"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:inputType="numberPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnforg"
+        style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Forgot your password?"
+        android:textColorHint="#fff" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnenter"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bot"
+        android:layout_gravity="bottom"
+        android:hint="Sign in"
+        android:textColorHint="#fff" />
+
+</LinearLayout>
 
 
 </LinearLayout>
